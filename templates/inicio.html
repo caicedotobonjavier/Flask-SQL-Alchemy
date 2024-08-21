@@ -1,0 +1,21 @@
+<h1>Directorio de Personas</h1>
+
+<ul>
+    <li>
+        Cantidad de personas: {{cantidad}}
+    </li>
+</ul>
+
+{% for persona in listado %}
+    <ul>
+        <li>
+            Nombres: {{persona.nombres}} <br>     
+            Apellidos: {{persona.apellidos}} <br>
+            Edad: {{persona.edad}} <br>
+            Activo: {{persona.activo}} <br>
+            Fecha Nacimiento: {{persona.fecha_nacimiento}} <br>
+            Correo Electronico: {{persona.email}} <br>
+        </li>
+    </ul>    
+{% endfor %}
+

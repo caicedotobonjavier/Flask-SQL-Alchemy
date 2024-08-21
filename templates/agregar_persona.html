@@ -1,0 +1,44 @@
+
+<div style="text-align:center;">
+    <h1>Agregar Persona</h1>
+
+    <form method="POST">
+        {{form.csrf_token}}
+
+        <p>
+            {{form.nombres.label}} <br>
+            {{form.nombres(size=50)}}
+        </p>
+
+        <p>
+            {{form.apellidos.label}} <br>
+            {{form.apellidos(size=50)}}
+        </p>
+
+        <p>
+            {{form.edad.label}} <br>
+            {{form.edad}}
+        </p>
+
+        <p>
+            {{form.activo.label}} <br>
+            {{form.activo}}
+        </p>
+
+        <p>
+            {{form.nombres.fecha_nacimiento}} <br>
+            {{form.fecha_nacimiento}}
+        </p>
+
+        <p>
+            {{form.email.label}} <br>
+            {{form.email(size=50)}}
+        </p>
+
+
+        <p>
+            {{form.enviar}}
+        </p>
+        
+    </form>
+</div>
