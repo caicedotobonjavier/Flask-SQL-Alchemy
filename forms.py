@@ -13,3 +13,4 @@ class PersonaForm(FlaskForm):
     fecha_nacimiento = DateField('Fecha Nacimiento', validators=[DataRequired()])
     email = EmailField('Correo Electronico', validators=[DataRequired()])
     enviar = SubmitField('Enviar')
+

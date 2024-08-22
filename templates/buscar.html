@@ -1,0 +1,21 @@
+<div style="text-align:center;">
+    <h1>Buscar Persona</h1>
+
+    <form method="GET">
+        <input type="text" name="id" id="id">
+        <button type="submit">Buscar</button>
+    </form>
+    
+    
+    <ul>
+        {% for persona in buscado %}        
+            {{persona.nombres}}
+            {{persona.apellidos}}  <br>       
+        {% endfor %}
+    </ul>
+
+    <a href="/">Ir atras</a>
+</div>
+
+
+
